@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/panel_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View style="@style/list_item_border_hor" />
+
+        <RelativeLayout
+            android:id="@+id/more_item_help"
+            style="@style/more_item_layout">
+
+            <ImageView
+                style="@style/more_item_imageview"
+                android:src="@drawable/icon_more_help" />
+
+            <TextView
+                style="@style/more_item_textview"
+                android:text="@string/more_item_help" />
+
+            <ImageView style="@style/more_item_submenu_imv" />
+        </RelativeLayout>
+
+        <View
+            style="@style/list_item_border_hor"
+            android:layout_marginLeft="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/more_item_inform"
+            style="@style/more_item_layout">
+
+            <ImageView
+                style="@style/more_item_imageview"
+                android:src="@drawable/icon_more_inform" />
+
+            <TextView
+                style="@style/more_item_textview"
+                android:text="@string/more_item_inform" />
+
+            <ImageView style="@style/more_item_submenu_imv" />
+        </RelativeLayout>
+
+        <View
+            style="@style/list_item_border_hor"
+            android:layout_marginLeft="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/more_item_clear"
+            style="@style/more_item_layout">
+
+            <ImageView
+                style="@style/more_item_imageview"
+                android:src="@drawable/icon_more_clear" />
+
+            <TextView
+                style="@style/more_item_textview"
+                android:text="@string/more_item_clear" />
+
+            <ImageView
+                android:id="@+id/more_item_clear_right_arrow"
+                style="@style/more_item_submenu_imv" />
+
+            <TextView
+                android:id="@+id/more_item_clear_size"
+                style="@style/more_item_textview"
+                android:layout_marginRight="2dp"
+                android:layout_toLeftOf="@id/more_item_clear_right_arrow"
+                android:text="0M" />
+        </RelativeLayout>
+
+        <View style="@style/list_item_border_hor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dip"
+            android:layout_marginTop="40dip"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <View style="@style/list_item_border_hor" />
+
+
+            他b
+
+            <RelativeLayout
+                android:id="@+id/more_item_fankui"
+                style="@style/more_item_layout">
+
+                <ImageView
+                    style="@style/more_item_imageview"
+                    android:src="@drawable/icon_more_fankui" />
+
+                <TextView
+                    style="@style/more_item_textview"
+                    android:text="@string/more_item_fankui" />
+
+                <ImageView style="@style/more_item_submenu_imv" />
+            </RelativeLayout>
+
+            <View
+                style="@style/list_item_border_hor"
+                android:layout_marginLeft="30dp" />
+
+            <RelativeLayout
+                android:id="@+id/more_item_update"
+                style="@style/more_item_layout">
+
+                <ImageView
+                    style="@style/more_item_imageview"
+                    android:src="@drawable/icon_more_update" />
+
+                <TextView
+                    style="@style/more_item_textview"
+                    android:text="@string/more_item_update" />
+
+                <ImageView style="@style/more_item_submenu_imv" />
+            </RelativeLayout>
+
+            <View
+                style="@style/list_item_border_hor"
+                android:layout_marginLeft="30dp" />
+
+            <RelativeLayout
+                android:id="@+id/more_item_we"
+                style="@style/more_item_layout">
+
+                <ImageView
+                    style="@style/more_item_imageview"
+                    android:src="@drawable/icon_more_we" />
+
+                <TextView
+                    style="@style/more_item_textview"
+                    android:text="@string/more_item_we" />
+
+                <ImageView style="@style/more_item_submenu_imv" />
+            </RelativeLayout>
+
+            <View
+                style="@style/list_item_border_hor"
+                android:layout_marginLeft="30dp" />
+
+            <RelativeLayout
+                android:id="@+id/more_item_share"
+                style="@style/more_item_layout">
+
+                <ImageView
+                    style="@style/more_item_imageview"
+                    android:src="@drawable/icon_more_share" />
+
+                <TextView
+                    style="@style/more_item_textview"
+                    android:text="@string/more_item_share" />
+
+                <ImageView style="@style/more_item_submenu_imv" />
+            </RelativeLayout>
+
+            <View style="@style/list_item_border_hor" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From BeautyShow:
+* .DS_Store
+* BeautyShow.iml
+* ReadMe
+* ic_launcher-web.png
+* proguard-project.txt
+From library_pullToRefresh_chenyoca:
+* LICENSE
+* build.xml
+* library_pullToRefresh_chenyoca.iml
+* pom.xml
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:22.2.1
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In library_pullToRefresh_chenyoca:
+* AndroidManifest.xml => library_pullToRefresh_chenyoca/src/main/AndroidManifest.xml
+* assets/ => library_pullToRefresh_chenyoca/src/main/assets
+* res/ => library_pullToRefresh_chenyoca/src/main/res/
+* src/ => library_pullToRefresh_chenyoca/src/main/java/
+In BeautyShow:
+* AndroidManifest.xml => beautyShow/src/main/AndroidManifest.xml
+* assets/ => beautyShow/src/main/assets
+* libs/TalkingDataAnalytics_V2.1.37.jar => beautyShow/libs/TalkingDataAnalytics_V2.1.37.jar
+* libs/httpmime-4.2.5.jar => beautyShow/libs/httpmime-4.2.5.jar
+* libs/jsoup-1.8.3-javadoc.jar => beautyShow/libs/jsoup-1.8.3-javadoc.jar
+* libs/jsoup-1.8.3.jar => beautyShow/libs/jsoup-1.8.3.jar
+* libs/pgyer_sdk_2.2.2.jar => beautyShow/libs/pgyer_sdk_2.2.2.jar
+* libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar => beautyShow/libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar
+* res/ => beautyShow/src/main/res/
+* src/ => beautyShow/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

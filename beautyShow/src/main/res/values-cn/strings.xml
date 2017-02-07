@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">美女神社</string>
+    <!-- common -->
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="wenxin_tips">温馨提示</string>
+    <string name="tips_data_null">（空）</string>
+    <string name="delete">删除</string>
+
+    <!-- tip -->
+    <string name="success">成功</string>
+    <string name="failed">失败</string>
+    <string name="loading">正在加载...</string>
+    <string name="getdata_fail">数据获取失败</string>
+    <string name="title">标题</string>
+
+    <!-- main -->
+    <string name="tab_home">女神</string>
+    <string name="tab_gallery">写真集</string>
+    <string name="tab_rank">排行榜</string>
+    <string name="tab_more">更多</string>
+    <string name="tips_onemore2exit">再按一次退出程序</string>
+
+    <!-- tab more -->
+    <string name="more_item_help">新手帮助</string>
+    <string name="more_item_clear">清理缓存</string>
+    <string name="more_item_inform">系统公告</string>
+    <string name="more_item_update">版本信息</string>
+    <string name="more_item_fankui">意见反馈</string>
+    <string name="more_item_share">分享应用</string>
+    <string name="more_item_we">关于我们</string>
+    <string name="deletecache_ing">正在清理缓存...</string>
+    <string name="deletecache_ask_format_by_size">当前缓存大小为%s，确定要全部清除吗？</string>
+    <string name="deletecache_sum">√ 缓存全部清除完毕</string>
+    <string name="format_size_M">%1$sM</string>
+    <string name="tip_help">1、请在Wifi环境下使用，避免耗费过多流量。\n2、支持摇一摇反馈，若发现页面有问题，马上摇一摇即可截屏然后弹出反馈页面。</string>
+    <string name="tip_inform">本应用资源均来自于网络，仅供交流分享和轻松娱乐，如有侵权请联系更改。</string>
+    <string name="tip_update_format_v">当前版本为%1$s</string>
+    <string name="tip_fankui">可以通过发送邮件或者在应用市场评论等方式，给我们反馈意见和建议。我们积极接受各方批评、建议。</string>
+    <string name="tip_we">作者：Kido\n邮箱：everlastxgb@gmail.com</string>
+
+    <string name="share_message">[应用分享] 各行各业、各式各样的美女、女神，美图欣赏。中国内地、港澳台、日本、欧美，演艺明星、歌手、模特等等。</string>
+
+    <!-- girl detail -->
+    <string name="description">个人简介与说明</string>
+
+    <!-- gallery detail -->
+    <string name="girl_profile">女神资料</string>
+    <string name="recommend_gallery">推荐套图</string>
+
+    <!-- gallery more -->
+    <string name="other_hot_gallery">其他热门套图</string>
+
+    <!-- search input -->
+    <string name="name_or_pinyin">姓名或拼音</string>
+    <string name="clear_search_history">清除搜索记录</string>
+    <string name="search">搜索</string>
+    <string name="tips_keyword_noempty">关键词不能为空</string>
+    <string name="search_auto_tip_format">搜索&#160;&#160;“%1$s”</string>
+
+    <string name="pref_country">国家：</string>
+    <string name="pref_profession">职业：</string>
+    <string name="pref_xingzuo">星座：</string>
+    <string name="pref_bloodtype">血型：</string>
+    <string name="pref_age">年龄：</string>
+    <string name="pref_height">身高：</string>
+    <string name="pref_chest">胸围：</string>
+    <string name="pref_waist">腰围：</string>
+    <string name="pref_hip">臀围：</string>
+    <string name="pref_cup">罩杯：</string>
+    
+    <string name="format_range_sui">%1$s-%2$s 岁</string>
+    <string name="format_range_cm">%1$s-%2$s cm</string>
+    <string name="format_range">%1$s-%2$s</string>
+    
+    <string name="filter_condition">筛选条件(可多选)</string>
+    <string name="please_select">请选择</string>
+    <string name="select_done">选取</string>
+    <string name="select_reset">重置</string>
+    <string name="select_clear">清除</string>
+    
+    <!-- photo view -->
+    <string name="save">保存</string>
+    <string name="download_src">下载原图</string>
+    <string name="download">下载</string>
+    <string name="fail_to_load_image">加载图片失败</string>
+    <string name="success_to_save">图片成功保存到</string>
+    <string name="fail_to_save">图片保存失败</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/bigtip_loaddata" />
+
+        
+         <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pullToRefreshGridView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@null"
+            android:numColumns="auto_fit"
+            android:scrollbarStyle="outsideOverlay"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp"
+            ptr:ptrHeaderSubTextColor="@color/topbar_bg"
+            ptr:ptrHeaderTextColor="@color/topbar_bg"
+            ptr:ptrListViewExtrasEnabled="false"
+            ptr:ptrMode="pullFromStart"
+            ptr:ptrDrawable="@drawable/webview_refresh_h"
+            ptr:ptrScrollingWhileRefreshingEnabled="false"
+            ptr:ptrShowIndicator="false" />
+    </RelativeLayout>
+        
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="activity_bg">#fff</color>
+    <!--
+    <color name="app_main_blue_light">#33a7fc</color>
+    <color name="app_main_blue_dark">#0C84DA</color>
+    -->
+    <color name="item_ripple">#66999999</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="gold">#D8A738</color>
+    <color name="app_main_blue_light">#2196f3</color>
+    <color name="app_main_blue_light_trans">#662196f3</color>
+    <color name="app_main_blue_dark">#1E88E5</color>
+    <color name="dark">#7d7d7d</color>
+    <color name="grid_border">#33a7fc</color>
+    <color name="listview_header_text">#000</color>
+    <color name="trans_black_bkg">#80000000</color>
+    <color name="orange_dark">#E5560E</color>
+    <color name="orange_light">#FF7718</color>
+    <color name="list_border">#d0d0d0</color>
+    <color name="navi_tab_color">#ff888888</color>
+    <color name="navi_tab_color_h">#ff129aee</color>
+    <color name="navi_bar_bg">#ffefefef</color>
+    <color name="navi_bar_bg_trans">#e0efefef</color>
+    <color name="text_grey">#ff999999</color>
+    <color name="blue_left_menu_channel">#ff207ad7</color>
+    <color name="blue_in_news_list_card">#ff129aee</color>
+    <color name="topbar_bg">#ff1c88cd</color>
+    <color name="panel_bg">#eee</color>
+    <color name="image_loading_bkg">#fff1f0ef</color>
+    
+    <color name="menu_ripple">#62B2FF</color>
+    <color name="menu_shadow">#444</color>
+
+</resources>

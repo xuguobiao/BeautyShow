@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:button="@null"
+    android:padding="8.0dip"
+    android:background="@drawable/selector_radio_bg"
+    android:textColor="@color/selector_tv_blue2white_check" >
+
+</CheckBox>

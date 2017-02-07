@@ -1,0 +1,143 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="list_item_border_ver">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/list_border</item>
+    </style>
+
+    <style name="list_item_border_hor">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/list_border</item>
+    </style>
+
+    <style name="more_item_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@drawable/selector_corner_middle_trans2dark0</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+    <style name="more_item_imageview">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="more_item_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">35dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="more_item_submenu_imv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/mm_submenu_normal</item>
+    </style>
+
+    <style name="bigtip_tv">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tag_tv">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:background">@color/app_main_blue_light</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MenuButtonsSmall_Me">
+        <item name="fab_size">mini</item>
+        <item name="fab_showAnimation">@anim/jump_from_down</item>
+        <item name="fab_hideAnimation">@anim/jump_to_down</item>
+        <item name="fab_shadowColor">@color/menu_shadow</item>
+        <item name="fab_colorNormal">@color/app_main_blue_light</item>
+        <item name="fab_colorPressed">@color/app_main_blue_dark</item>
+        <item name="fab_colorRipple">@color/menu_ripple</item>
+        <item name="fab_colorDisabled">@color/red</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/ic_star</item>
+    </style>
+
+    <style name="MenuSmall_Me">
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="menu_colorNormal">@color/app_main_blue_light</item>
+        <item name="menu_fab_size">mini</item>
+        <item name="menu_colorPressed">@color/app_main_blue_dark</item>
+        <item name="menu_colorRipple">@color/menu_ripple</item>
+        <item name="menu_labels_ellipsize">end</item>
+        <item name="menu_labels_singleLine">true</item>
+    </style>
+
+    <style name="filter_sel_pref_tv">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="filter_sel_spinner">
+        <item name="android:hint">@string/please_select</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/text_grey</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="filter_sel_seekbar_tv">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+</resources>

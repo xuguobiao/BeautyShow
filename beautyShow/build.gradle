@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.everlastxgb.beautyshow"
+        minSdkVersion 11
+        targetSdkVersion 23
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['assets']
+        }
+    }
+
+    dexOptions {
+        //  jumboMode true
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+
+    //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉。
+    lintOptions {
+
+        quiet true
+
+        abortOnError false
+
+        ignoreWarnings true
+    }
+
+    //签名
+    signingConfigs {
+        release {
+        }
+    }
+
+    buildTypes {
+        release {
+//            minifyEnabled true
+//            //Zipalign优化
+//            zipAlignEnabled true
+//
+//            // 移除无用的resource文件
+//            shrinkResources true
+//
+//            //前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+            //签名
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile project(':library_pullToRefresh')
+    compile 'com.android.support:support-v4:23.0.1'
+
+    compile fileTree(dir: 'libs', include: '*.jar')
+
+    compile 'com.umeng.analytics:analytics:latest.integration'
+}

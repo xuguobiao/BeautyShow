@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="@string/filter_condition"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/condition_margin_top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/filter_sel_pref_tv"
+                android:text="@string/pref_country" />
+
+            <Spinner
+                android:id="@+id/countrySpinner"
+                style="@style/filter_sel_spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/filter_sel_pref_tv"
+                android:text="@string/pref_profession" />
+
+            <Spinner
+                android:id="@+id/professionSpinner"
+                style="@style/filter_sel_spinner" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/condition_margin_top"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/filter_sel_pref_tv"
+                android:text="@string/pref_xingzuo" />
+
+            <Spinner
+                android:id="@+id/xingzuoSpinner"
+                style="@style/filter_sel_spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/filter_sel_pref_tv"
+                android:text="@string/pref_bloodtype" />
+
+            <Spinner
+                android:id="@+id/bloodtypeSpinner"
+                style="@style/filter_sel_spinner" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/condition_margin_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/filter_sel_pref_tv"
+            android:text="@string/pref_age" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/ageTextView"
+                style="@style/filter_sel_seekbar_tv"
+                android:text="15-20岁" />
+
+            <RelativeLayout
+                android:id="@+id/ageLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ageTextView" >
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/condition_margin_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/filter_sel_pref_tv"
+            android:text="@string/pref_height" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/heightTextView"
+                style="@style/filter_sel_seekbar_tv"
+                android:text="150-180cm" />
+
+            <RelativeLayout
+                android:id="@+id/heightLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/heightTextView" >
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/condition_margin_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/filter_sel_pref_tv"
+            android:text="@string/pref_chest" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/chestTextView"
+                style="@style/filter_sel_seekbar_tv"
+                android:text="150-180cm" />
+
+            <RelativeLayout
+                android:id="@+id/chestLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/chestTextView" >
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/condition_margin_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/filter_sel_pref_tv"
+            android:text="@string/pref_waist" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/waistTextView"
+                style="@style/filter_sel_seekbar_tv"
+                android:text="150-180cm" />
+
+            <RelativeLayout
+                android:id="@+id/waistLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/waistTextView" >
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/condition_margin_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/filter_sel_pref_tv"
+            android:text="@string/pref_hip" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/hipTextView"
+                style="@style/filter_sel_seekbar_tv"
+                android:text="150-180cm" />
+
+            <RelativeLayout
+                android:id="@+id/hipLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/hipTextView" >
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/condition_margin_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/filter_sel_pref_tv"
+            android:text="@string/pref_cup" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/cupTextView"
+                style="@style/filter_sel_seekbar_tv"
+                android:text="D-G" />
+
+            <RelativeLayout
+                android:id="@+id/cupLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/cupTextView" >
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_bg"
+            android:text="@string/select_reset"
+            android:textColor="@color/selector_tv_blue2white_check"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/selectButton"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_radio_bg"
+            android:text="@string/select_done"
+            android:textColor="@color/selector_tv_blue2white_check"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

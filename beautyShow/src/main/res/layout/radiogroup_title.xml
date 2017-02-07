@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="这是标题"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <com.everlastxgb.beautyshow.widget.MultiLineRadioGroup
+        android:id="@+id/raidoGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        app:child_layout="@layout/cat_tag_item"
+        app:child_margin_horizontal="5.0dip"
+        app:child_margin_vertical="5.0dip"
+        app:gravity="1"
+        app:single_choice="true" >
+    </com.everlastxgb.beautyshow.widget.MultiLineRadioGroup>
+
+</LinearLayout>
